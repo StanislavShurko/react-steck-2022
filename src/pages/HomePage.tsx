@@ -43,9 +43,10 @@ export function HomePage() {
               onClick={() => clickHandler(user.login)}
               className="py-2 px-4 hover:bg-gray-500 hover:text-white transition-colors cursor-pointer"
             >
-              {
-                user.login
-              }
+              <div className="inline-flex">
+                <img className="align-middle w-[50px] h-[50px] mr-2 rounded-2xl" src={user.avatar_url}/>
+                <p>{user.login}</p>
+              </div>
             </li>
           ))}
         </ul>}

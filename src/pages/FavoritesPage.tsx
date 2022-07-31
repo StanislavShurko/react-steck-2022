@@ -10,7 +10,9 @@ export function FavoritesPage() {
       <ul className="list-none">
         { favorites.map((fav) => (
           <li key={fav}>
-            <a href={fav} target="_blank" rel="noreferrer">{fav}</a>
+            <div className="border py-3 px-5 rounded mb-2 hover:shadow-md hover:bg-gray-100 transition-all">
+              <a href={fav} target="_blank" rel="noreferrer">{fav}</a>
+            </div>
           </li>
         ))}
       </ul>
